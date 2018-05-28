@@ -24,7 +24,7 @@
 
     <!-- Button can be pressed, or clicked, by the user to perform an action. -->
     <ListView
-        android:id="@+id/listajJela"
+        android:id="@+id/lista_jela"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

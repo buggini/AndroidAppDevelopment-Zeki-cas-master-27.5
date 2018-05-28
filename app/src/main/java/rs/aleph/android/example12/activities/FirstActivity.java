@@ -52,7 +52,7 @@ public class FirstActivity extends Activity {
 
 		// Creates an ArrayAdaptar from the array of String
 		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,R.layout.list_item, jeloNames);
-		ListView listView = (ListView) findViewById(R.id.listofJela);
+		ListView listView = (ListView) findViewById(R.id.lista_jela);
 
 		// Assigns ArrayAdaptar to ListView
 		listView.setAdapter(dataAdapter);

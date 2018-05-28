@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="unable_to_invoke_camera">Unable to invoke camere, without permisson!</string>
+    <string name="ime_jela">ime Jela:</string>
+    <string name="opis">Opis:</string>
+    <string name="kaloriska_vrednost">Kaloriska Vrednost:</string>
 </resources>

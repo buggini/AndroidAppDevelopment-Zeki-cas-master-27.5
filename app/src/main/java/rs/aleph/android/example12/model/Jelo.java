@@ -1,6 +1,7 @@
 package rs.aleph.android.example12.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Jelo {
 
@@ -13,11 +14,11 @@ public class Jelo {
     private float rating;
     private Kategorija kategorija;
 
-//    private List<Sastojci> sastojci;
+   private List<Sastojak> sastojci;
 
     public Jelo(){
 
-
+        sastojci =  new ArrayList<>();
     }
 
     public Jelo(int id, String slika, String naziv, String opis, int klVresnost, double cena, float rating, Kategorija kategorija) {
@@ -29,6 +30,8 @@ public class Jelo {
         this.cena = cena;
         this.rating = rating;
         this.kategorija = kategorija;
+
+        sastojci =  new ArrayList<>();
 
     }
 
@@ -88,7 +91,23 @@ public class Jelo {
         this.cena = cena;
     }
 
+    public void addSastojak(Sastojak sastojak) {
 
+        sastojci.add(sastojak);
+    }
+
+    public void removeJelo(Sastojak sastojak) {
+
+        sastojci.remove(sastojak);
+    }
+
+    public List<Sastojak> getSastojci() {
+        return sastojci;
+    }
+
+    public void setSastojci(List<Sastojak> sastojci) {
+        this.sastojci = sastojci;
+    }
 
     public float getRating() {
         return rating;

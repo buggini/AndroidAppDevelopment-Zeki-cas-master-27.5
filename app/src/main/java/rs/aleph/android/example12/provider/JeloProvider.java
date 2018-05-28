@@ -5,6 +5,7 @@ import java.util.List;
 
 import rs.aleph.android.example12.model.Jelo;
 import rs.aleph.android.example12.model.Kategorija;
+import rs.aleph.android.example12.model.Sastojak;
 
 public class JeloProvider {
 
@@ -37,7 +38,10 @@ public class JeloProvider {
 
         switch (id){
             case 0:
-                return new Jelo(0,"cevapi.jpg","Cevapi","meso",200, 750, 4.0f, rostilj);
+                Jelo jelo = new Jelo(0,"cevapi.jpg","Cevapi","meso",200, 750, 4.0f, rostilj);
+                jelo.addSastojak(new Sastojak(0, "mleveno meso od govedine"));
+                jelo.addSastojak(new Sastojak(1, "soja,so, biber"));
+                return jelo;
             case 1:
                 return new Jelo(1,"sarma.jpg","Sarma","mleveno meso u kupusu",200, 750, 3.5f,KuvanaJela);
             default:

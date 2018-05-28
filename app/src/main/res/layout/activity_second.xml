@@ -26,30 +26,27 @@
     <!-- TextView displays text to the user. -->
     <TextView
         android:id="@+id/tv_ime"
-        android:text="ime Jela:"
+        android:text="@string/ime_jela"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginRight="150dp"/>
+
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginRight="150dp">
-
-    </TextView>
-
+        android:layout_marginRight="150dp"/>
 
     <Spinner
-        android:id="@+id/sp_listaSastojka"
+        android:id="@+id/sp_lista_sastojka"
         android:layout_width="184dp"
         android:layout_height="60dp"
         android:layout_marginLeft="190dp"
-        android:popupBackground="?android:attr/findOnPageNextDrawable"
-        android:textAlignment="center" />
+         />
 
     <TextView
         android:id="@+id/tv_opis"
-        android:text="Opis:"
+        android:text="@string/opis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -58,7 +55,7 @@
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/tv_kaloriska"
-        android:text="Kaloriska Vrednost:"
+        android:text="@string/kaloriska_vrednost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -72,9 +69,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
-    android:id="@+id/tv_cena_hrane"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+        android:id="@+id/tv_cena_hrane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <!-- Spinners provide a quick way to select one value from a set. -->
     <Spinner

@@ -98,13 +98,13 @@ public class SecondActivity extends Activity {
         ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, katogrijaNames);
         category.setAdapter(adapter);
         category.setSelection((int)JeloProvider.getJeloById(position).getKategorija().getId());
-
-        //spiner za ssastojke
-        Spinner sastojak = (Spinner) findViewById(R.id.sp_listaSastojka);
-        List<String> sastojakName = SastojciProvider.getSastojakNames();
-        ArrayAdapter<String> adapterr = new ArrayAdapter(this, android.R.layout.simple_spinner_item, sastojakName);
+//
+//        //spiner za ssastojke
+        Spinner sastojak = (Spinner) findViewById(R.id.sp_lista_sastojka);
+        List<Sastojak> sastojakName = JeloProvider.getJeloById(position).getSastojci();
+        ArrayAdapter<Sastojak> adapterr = new ArrayAdapter(this, android.R.layout.simple_spinner_item, sastojakName);
         sastojak.setAdapter(adapterr);
-        sastojak.setSelection((int)SastojciProvider.getSastojakById(position).getJelo().getId());
+        sastojak.setSelection((int)SastojciProvider.getSastojakById(position).getId());
 
 
 

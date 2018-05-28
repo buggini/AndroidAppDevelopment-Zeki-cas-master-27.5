@@ -62,9 +62,6 @@ public class Sastojak {
 
     @Override
     public String toString() {
-        return "Sastojci{" +
-                "idSastojci=" + id +
-                ", nazivSastojic='" + naziv + '\'' +
-                '}';
+        return naziv;
     }
 }
