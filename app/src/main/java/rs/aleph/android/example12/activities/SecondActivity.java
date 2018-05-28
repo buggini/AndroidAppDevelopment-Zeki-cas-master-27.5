@@ -103,7 +103,7 @@ public class SecondActivity extends Activity {
         Spinner sastojak = (Spinner) findViewById(R.id.sp_listaSastojka);
         List<String> sastojakName = SastojciProvider.getSastojakNames();
         ArrayAdapter<String> adapterr = new ArrayAdapter(this, android.R.layout.simple_spinner_item, sastojakName);
-        sastojak.setAdapter(adapter);
+        sastojak.setAdapter(adapterr);
         sastojak.setSelection((int)SastojciProvider.getSastojakById(position).getJelo().getId());
 
 
